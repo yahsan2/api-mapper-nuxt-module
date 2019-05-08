@@ -20,5 +20,8 @@
     "url": "https://github.com/yahsan2/nuxt-module-api-mapper/issues"
   },
   "homepage": "https://github.com/yahsan2/nuxt-module-api-mapper#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }
