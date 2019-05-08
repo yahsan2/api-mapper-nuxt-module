@@ -1,6 +1,6 @@
 const path = require('path')
 
-export default function Api(_moduleOptions) {
+function apiMapperModule(_moduleOptions) {
   // Combine options
   const moduleOptions = _moduleOptions.config
     ? Object.assign(
@@ -10,6 +10,9 @@ export default function Api(_moduleOptions) {
       )
     : _moduleOptions
   const options = Object.assign({}, this.options.api, moduleOptions)
+
+  // Default prefix
+  const prefix = process.env.API_PREFIX || moduleOptions.prefix || '/'
 
   /* istanbul ignore if */
   if (process.env.API_URL_BROWSER) {
@@ -28,3 +31,5 @@ export default function Api(_moduleOptions) {
     options
   })
 }
+
+module.exports.meta = require('../package.json')module.exports = apiMapperModule
