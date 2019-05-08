@@ -1,10 +1,11 @@
 {
   "name": "nuxt-module-api-mapper",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "nuxt module for mapping uri and response props of rest api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
