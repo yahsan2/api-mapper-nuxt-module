@@ -1,6 +1,4 @@
 const path = require('path')
-const chalk = require('chalk')
-const debug = require('debug')('nuxt:api')
 
 export default function Api(_moduleOptions) {
   // Combine options
@@ -29,11 +27,4 @@ export default function Api(_moduleOptions) {
     fileName: 'api.js',
     options
   })
-
-  /* eslint-disable no-console */
-  debug(
-    `BaseURL: ${chalk.green(options.baseURL)} (Browser: ${chalk.green(
-      options.browserBaseURL
-    )})`
-  )
 }
