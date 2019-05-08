@@ -25,5 +25,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "standard-version": "^6.0.1"
+  },
+  "devDependencies": {
+    "nuxt": "^2.6.3"
   }
 }

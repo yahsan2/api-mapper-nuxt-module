@@ -32,4 +32,5 @@ function apiMapperModule(_moduleOptions) {
   })
 }
 
-module.exports.meta = require('../package.json')module.exports = apiMapperModule
+module.exports.meta = require('../package.json')
+module.exports = apiMapperModule
