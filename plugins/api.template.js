@@ -97,7 +97,7 @@ class ApiMapper{
 
     const basePropKeys = basePropStr.split('.')
     data = basePropKeys.reduce((d, basePropKey)=>{
-      return d[ basePropKey ] || d
+      return d && d[ basePropKey ] || null
     }, data)
 
     return data
