@@ -1,6 +1,6 @@
 {
   "name": "nuxt-module-api-mapper",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "nuxt module for mapping uri and response props of rest api",
   "main": "index.js",
   "scripts": {
