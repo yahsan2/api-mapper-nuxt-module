@@ -137,6 +137,8 @@ class ApiMapper{
         data[ propKey ] = this.getDeepData(originData, propValue)
       }
     })
+    console.log(data)
+    
     return data
   }
 }
