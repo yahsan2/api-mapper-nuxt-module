@@ -94,13 +94,12 @@ class ApiMapper{
 
   getDeepData(data, basePropStr){
     if(!basePropStr || typeof basePropStr !== 'string') return data;
-
+    console.log(data);
+    
     const basePropKeys = basePropStr.split('.')
     basePropKeys.forEach((basePropKey)=>{
       if (data.hasOwnProperty( basePropKey )) {
         data = data[ basePropKey ]
-      }else{
-        return null
       }
     })
 
