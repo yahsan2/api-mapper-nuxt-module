@@ -100,7 +100,7 @@ class ApiMapper{
       if (data.hasOwnProperty( basePropKey )) {
         data = data[ basePropKey ]
       }else{
-        data = null
+        return null
       }
     })
 
