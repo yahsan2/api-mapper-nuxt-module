@@ -99,6 +99,8 @@ class ApiMapper{
     basePropKeys.forEach((basePropKey)=>{
       if (data.hasOwnProperty( basePropKey )) {
         data = data[ basePropKey ]
+      }else{
+        data = null
       }
     })
 
