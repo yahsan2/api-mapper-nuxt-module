@@ -64,6 +64,7 @@ class ApiMapper{
     if(this.propMap && this.propMap[name]){
       const propValue = this.propMap[name] || {}
       const data = this.getMappingData(originData, propValue)
+      console.log(data)
       return data;
     }else{
       return originData
