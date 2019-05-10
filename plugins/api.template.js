@@ -64,7 +64,6 @@ class ApiMapper{
     if(this.propMap && this.propMap[name]){
       const propValue = this.propMap[name] || {}
       const data = this.getMappingData(originData, propValue)
-      console.log(data)
       return data;
     }else{
       return originData
@@ -73,9 +72,10 @@ class ApiMapper{
 
   getMappingData(originData, propValue){
     const props = this.getProps( propValue )
-    const basePropStr = propValue['base'] || ''
 
-    originData = this.getDeepData(originData, basePropStr)
+    if (propValue['base']) {
+      originData = this.getDeepData(originData, propValue['base'])
+    }
 
     if(propValue['one']){
       const index = typeof propValue['one'] === 'number' ? propValue['one'] - 1 : 0
@@ -90,7 +90,7 @@ class ApiMapper{
       return mappingData;
     }
 
-    return this.mergeProps(originData, props, basePropStr);
+    return this.mergeProps(originData, props);
   }
 
   getDeepData(data, basePropStr){
@@ -127,7 +127,7 @@ class ApiMapper{
     return propValue['props'] || propValue['extends']
   }
 
-  mergeProps(originData, props, basePropStr){
+  mergeProps(originData, props){
     const data = {};
     Object.keys(props).forEach((propKey)=>{
       const propValue = props[ propKey ]
