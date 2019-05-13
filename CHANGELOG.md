@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/yahsan2/nuxt-module-api-mapper/compare/v0.0.20...v0.1.0) (2019-05-13)
+
+
+
 ### [0.0.20](https://github.com/yahsan2/nuxt-module-api-mapper/compare/v0.0.19...v0.0.20) (2019-05-13)
 
 
