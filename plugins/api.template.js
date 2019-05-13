@@ -73,16 +73,16 @@ class ApiMapper{
   getMappingData(originData, propValue){
     const props = this.getProps( propValue )
 
-    if (propValue['base']) {
+    if (originData && propValue['base']) {
       originData = this.getDeepData(originData, propValue['base'])
     }
-
-    if(propValue['one']){
+    
+    if(originData && propValue['one']){
       const index = typeof propValue['one'] === 'number' ? propValue['one'] - 1 : 0
       originData = originData[index] || originData[0] || {}
     }
 
-    if(Array.isArray(originData)){
+    if(originData && Array.isArray(originData)){
       const mappingData = []
       originData.forEach((data, i)=>{
         mappingData.push( this.getMappingData(data, propValue) )
@@ -137,8 +137,6 @@ class ApiMapper{
         data[ propKey ] = this.getDeepData(originData, propValue)
       }
     })
-    console.log(data)
-    
     return data
   }
 }
