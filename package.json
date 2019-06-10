@@ -1,6 +1,6 @@
 {
   "name": "api-mapper-nuxt-module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "nuxt module for mapping uri and response props of rest api",
   "license": "MIT",
   "contributors": [
