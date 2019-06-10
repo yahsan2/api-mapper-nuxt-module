@@ -7,7 +7,7 @@ const getPort = require('get-port')
 const config = require('../example/nuxt.config')
 config.dev = false
 
-let nuxt, port
+let nuxt, port, window
 
 const url = path => `http://localhost:${port}${path}`
 const get = path => request(url(path))
@@ -19,6 +19,7 @@ describe('basic', () => {
     await new Builder(nuxt).build()
     port = await getPort()
     await nuxt.listen(port)
+    window = await nuxt.renderAndGetWindow(url('/'))
   })
 
   afterAll(async () => {
@@ -28,5 +29,11 @@ describe('basic', () => {
   test('render', async () => {
     const html = await get('/')
     expect(html).toContain('Works!')
+  })
+
+  test('$api is defined', () => {
+    window.onNuxtReady(() => {
+      expect(window.$nuxt.$api).toBeDefined()
+    })
   })
 })

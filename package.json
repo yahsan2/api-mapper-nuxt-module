@@ -23,7 +23,7 @@
     "lib"
   ],
   "dependencies": {
-    "axios": "^0.18.0"
+    "rest-api-remapper": "latest"
   },
   "devDependencies": {
     "@babel/core": "latest",
