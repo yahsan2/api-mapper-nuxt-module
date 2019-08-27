@@ -3856,14 +3856,16 @@ eslint-scope@^4.0.0, eslint-scope@^4.0.3:
     estraverse "^4.1.1"
 
 eslint-utils@^1.3.0, eslint-utils@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.3.1.tgz#9a851ba89ee7c460346f97cf8939c7298827e512"
-  integrity sha512-Z7YjnIldX+2XMcjr7ZkgEsOj/bREONV60qYeB/bjMAqqqZ4zxKyWX+BOUkdmRmA9riiIPVvo5x86m5elviOk0Q==
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.2.tgz#166a5180ef6ab7eb462f162fd0e6f2463d7309ab"
+  integrity sha512-eAZS2sEUMlIeCjBeubdj45dmBHQwPHWyBcT1VSYB7o9x9WRRqKxyUoiXlRjyAwzN7YEzHJlYg0NmzDRWx6GP4Q==
+  dependencies:
+    eslint-visitor-keys "^1.0.0"
 
 eslint-visitor-keys@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
-  integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
+  integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
 eslint@latest:
   version "5.16.0"
@@ -8455,13 +8457,12 @@ resolve@^1.1.7, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.2.0, resolve@^1.3.2
   dependencies:
     path-parse "^1.0.6"
 
-rest-api-remapper@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/rest-api-remapper/-/rest-api-remapper-0.1.4.tgz#51062e208e2bcd4c547b1ec04cfee57e22783055"
-  integrity sha512-+Um1J+ZAMAi0dgwAd6z28Wps9wTpnetu+H8S4/ds9QoJ4qCROEdCMEyenNMdQppbtN3Ow3cP6TIeLQwY9kC11Q==
+rest-api-remapper@latest:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/rest-api-remapper/-/rest-api-remapper-0.2.2.tgz#c34f55130ab02378cf818eb68381a234d8ead9ff"
+  integrity sha512-i68oDAmSRGYfmy9FSJo2VQp/mO2T7q5Nv1lXGPhqlig/KpTAJIUYQaxdbBQ4dyCAiI1AYONDApVveMj4mwYugg==
   dependencies:
     axios "^0.19.0"
-    standard-version "^6.0.1"
 
 restore-cursor@^2.0.0:
   version "2.0.0"
@@ -8959,7 +8960,7 @@ stackframe@^1.0.4:
   resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-1.0.4.tgz#357b24a992f9427cba6b545d96a14ed2cbca187b"
   integrity sha512-to7oADIniaYwS3MhtCa/sQhrxidCCQiF/qp4/m5iN3ipf0Y7Xlri0f6eG29r08aL7JYl8n32AF3Q5GYBZ7K8vw==
 
-standard-version@^6.0.1, standard-version@latest:
+standard-version@latest:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/standard-version/-/standard-version-6.0.1.tgz#ad50e9770b73090d2f8f692e520d906813a3cefe"
   integrity sha512-+09AwTbyLKyUwefiZSccgarp24okvH9A229NOVSpYTKWcxBxqZqdYmtQaJ8UET9mjPXRxP84vonJU4YMqCyBTQ==
